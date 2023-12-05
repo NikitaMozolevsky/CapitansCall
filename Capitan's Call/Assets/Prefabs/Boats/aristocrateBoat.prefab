@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2066386926607564837
+--- !u!1001 &7055567196961107922
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,8 +13,16 @@ PrefabInstance:
       value: aristocrateBoat
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_TagString
       value: Agent
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_LocalScale.x
@@ -30,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 79.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 84.79868
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71,36 +79,43 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0307df93a7a763f4aa664fc459c3041d, type: 2}
+      objectReference: {fileID: 2100000, guid: 6c0ec983ebc2aee48b8b036b9717fbf8, type: 2}
+    - target: {fileID: 3300000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 8547471881871753710, guid: 45d53eca9c25abe4a90b26e6583da7f3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3451772579480306614}
+      addedObject: {fileID: 6377871374502328145}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8638593165958466488}
+      addedObject: {fileID: 7310390258293881116}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -8294740195649699603}
+      addedObject: {fileID: 2110939111769133513}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6778896909747989913}
+      addedObject: {fileID: 2859494592435083066}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -549737907556463951}
   m_SourcePrefab: {fileID: 100100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
---- !u!1 &2066386926607599237 stripped
+--- !u!1 &7055567196961007986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1c908fe580708ea49b1751ac1cae7c19, type: 3}
-  m_PrefabInstance: {fileID: 2066386926607564837}
+  m_PrefabInstance: {fileID: 7055567196961107922}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &3451772579480306614
+--- !u!195 &6377871374502328145
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066386926607599237}
+  m_GameObject: {fileID: 7055567196961007986}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1500
@@ -116,13 +131,13 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!65 &8638593165958466488
+--- !u!65 &7310390258293881116
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066386926607599237}
+  m_GameObject: {fileID: 7055567196961007986}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -137,32 +152,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2240.046, y: 1557.9923, z: 703.2027}
   m_Center: {x: 5.7014465, y: 784.5847, z: 7.311368}
---- !u!114 &-8294740195649699603
+--- !u!114 &2110939111769133513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066386926607599237}
+  m_GameObject: {fileID: 7055567196961007986}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9490cd9faafc7436ea55da35bb1d75eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 2351991303918040657, guid: 1de55024f7ca3624da81c09750193b2b, type: 3}
-  endPoint: {fileID: 6149211703468495375, guid: ca750befe6863c345a3b42adaf99c645, type: 3}
+  startPoint: {fileID: 0}
+  endPoint: {fileID: 0}
   isEnemyShip: 0
   changeDestinationInterval: 15
---- !u!114 &6778896909747989913
+--- !u!114 &2859494592435083066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066386926607599237}
+  m_GameObject: {fileID: 7055567196961007986}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b0e394fbb5e2a94397ee649326bb7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 70
+  detectionRadius: 140
+  attackRadius: 70
+  rotationSpeed: 5
+  hitColliders: []
+--- !u!114 &-549737907556463951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055567196961007986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f11aff68aab0b41b668eed765d53e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

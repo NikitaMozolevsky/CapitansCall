@@ -18,7 +18,6 @@ public class AgentMovement : MonoBehaviour
 
     private void Start()
     {
-        SetStartEndPoints(); // Добавил т.к. шибка из-за отсувствия точек старта и конца у объектов
         navMeshAgent = GetComponent<NavMeshAgent>();
 
         // Назначаем случайную начальную цель

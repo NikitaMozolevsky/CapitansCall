@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    [SerializeField]private GameObject startPoint; // Начальная точка (минимальное значение X и Z)
-    [SerializeField]private GameObject endPoint;   // Конечная точка (максимальное значение X и Z)
+    [SerializeField] private GameObject startPoint; // Начальная точка (минимальное значение X и Z)
+    [SerializeField] private GameObject endPoint;   // Конечная точка (максимальное значение X и Z)
     public GameObject[] objectsToSpawn; // Массив объектов для создания
     public int numberOfObjectsToSpawn = 5; // Количество объектов для создания
     public float yOffset = 1.0f; // Смещение по оси Y
