@@ -21,20 +21,22 @@ public class CameraRay : MonoBehaviour
     private void DrawRay()
     {
         RaycastHit hit;
-
+        // Луч в точку прицела
         Ray ray = new Ray(transform.position, (targetTransform.position - transform.position).normalized);
-        
+        // Отрисовка луча
         Debug.DrawLine(ray.origin, ray.origin + ray.direction * 1000f, Color.red);
-
+        
+        // Если одна из точек активна
+        // Что делает точку активной ? Right/LeftView Couroutine.
         if (rightAimPoint.activeSelf || leftAimPoint.activeSelf)
         {
             currentPoint = rightAimPoint.activeSelf ? rightAimPoint : leftAimPoint; // Какая точка активна ?
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
-                // Обработка столкновения с объектом на слое "AimCube"
+                // Обработка столкновения с объектом на физическом слое "AimCube"
                 Debug.Log("Hit object on layer QWE: " + hit.collider.gameObject.name);
-                currentPoint.transform.position = hit.point;
-                rightAimPoint.GetComponent<GunsToRightPointer>().enabled = true;
+                currentPoint.transform.position = hit.point; // Изменение позиции точки цели
+                currentPoint.GetComponent<GunsToPointer>().enabled = true;
             }
             else
             {
@@ -45,7 +47,11 @@ public class CameraRay : MonoBehaviour
         }
         else
         {
-            rightAimPoint.GetComponent<GunsToRightPointer>().enabled = false;
+            if (currentPoint != null)
+            {
+                currentPoint.GetComponent<GunsToPointer>().enabled = false;
+                currentPoint.SetActive(false);
+            }
         }
     }
 

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AimControllerDraft : MonoBehaviour
@@ -53,10 +50,10 @@ public class AimControllerDraft : MonoBehaviour
         {   
             // Получение направления
             var direction = position - transform.position;
-            
+        
             // установление послоянной высоты высоты
             /*direction.y = 0;*/
-            
+        
             // Поворот объекта в нужном направлении
             transform.right = direction;
         }
